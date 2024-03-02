@@ -1,0 +1,20 @@
+---
+interface Props {
+    id: string
+    name: string
+    img: string
+    success: string
+    flightNumber: string
+    details: string
+}
+
+const { success, flightNumber, img, id, details } = Astro.props
+const sucessText = success ? "Éxito" : "Fracaso"
+---
+
+<a
+    href={`launch${id}`}
+    class="rounded-lg border shadow-md bg-gray-800 border-gray-700 hover:scale-105"
+>
+
+</a>
